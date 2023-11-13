@@ -1,0 +1,156 @@
+
+
+.bdwrap {
+	width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.info {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment_box{
+	border: 5px solid #e8e8e8;
+	padding:10px;
+	margin:10px;
+	border-radius: 10px;
+}
+
+.comment_view {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.comment_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mno {
+    font-weight: bold;
+    color: #555;
+}
+
+.content {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cdate {
+    color: #888;
+    font-size: 12px;
+}
+
+/* Subway-inspired styles */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    color: #007bff;
+}
+
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 0 15px;
+    background-color: #f26522;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #d8571d;
+}
+
+.comment_write input {
+	width:80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.comment_view {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.comment_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mno {
+    font-weight: bold;
+    color: #555;
+}
+
+.content {
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cdate {
+    color: #888;
+    font-size: 14px;
+}

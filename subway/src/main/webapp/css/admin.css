@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* ---------------- 기본값 ---------------- */
+*{padding: 0px; margin: 0px;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+.admin_wed{
+	height: 100%;
+	background-color: #F6F6F6;
+}
+
+
+/* ---------------- 관리자 페이지 전체 구역 ---------------- */
+.admin_wed2{
+	display: flex;	
+	justify-content: center;
+
+}
+
+.menu_L_box{
+	padding: 5px 50px 5px 5px;
+	width: 10%;
+	background-color: #7E7E7E;
+	padding: 50px;
+	
+}
+
+.menu_L_box h3, .menu_R_box h2{ padding-bottom: 20px; }
+
+.menu_R_box{
+	border-left: solid 1px #D0CACD;
+	padding: 50px 50px;
+	width: 90%;
+}
+
+/* 왼쪽 사이드 메뉴 버튼 */
+.menu_L_btn{
+	border: none;
+	width: 100%; height: 30px;
+	background-color: transparent;
+	margin: 10px 2px;
+	font-size: 18px; color: white;
+	border-bottom: solid 0.3px white;
+}
+.menu_L_btn:hover{
+	font-weight: bold;
+}
+
+/* 테이블 */
+.orderTable, .memberTable, .boardTable{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	border: solid 1px black;
+	border-collapse: collapse;
+}
+
+.orderTable th, .memberTable th, .boardTable th{
+	border: solid 1px black;
+	background-color: #BCBCBC;
+	height: 50px;
+}
+.orderTable td, .memberTable td, .boardTable td{
+	border: solid 1px black;
+	height: 30px;
+}
+
+.orderTd, .memberTd, .boardTd{
+	border: solid 1px black;
+	height: 30px;
+	cursor: pointer; 
+}
+
+.orderTd:hover, .memberTd:hover, .boardTd:hover{background-color: #E6E6E6;}
+
+
+/* 주문 상세 정보 뒤로가기 버튼 */
+.getSelectedDate{
+	padding: 1px 2px;
+}
+.gotoback{
+	border: none;
+	background-color: #F6F6F6;
+	font-size: 15px;
+	font-weight: bold;
+	color: #5B5B5B;
+}
+
+.gotoback:hover{
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+/* 주문 상제 정보 박스 구역 */
+.orderDetailsBox{
+	width: 70%; margin: 50px 20px;
+	padding: 50px 20px;
+	background-color: white;
+}
+
+.orderDetailsBox h3{
+	padding-bottom: 30px;
+}
+.orderNo{
+	padding: 10px 60px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #009132;
+}
+
+.orderDetailsBottomBox{
+	padding: 10px 30px;
+	display: flex;
+}
+
+.orderDetailsBottom{
+	padding: 10px 60px; 
+}
+
+.orderDetailsList{
+	height: 370px; 
+	max-width: 500px; min-width: 250px;
+	padding: 20px 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #F7F6F3;
+	display: flex; flex-direction: column; 
+	white-space: normal;
+	overflow-wrap: break-word;
+}
+
+/* 스크롤바 커스텀 */
+.orderDetailsList::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 조절 */
+}
+.orderDetailsList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.orderDetailsList::-webkit-scrollbar-thumb {
+  background-color: #9D9D9D; /* 스크롤바 색상을 원하는대로 설정 */
+  border-radius: 10px;
+}
+.orderDetailsList::-webkit-scrollbar-button {
+  display: none; /* 스크롤바의 방향표시 버튼 숨김 */
+}
+.orderDetailsBottom div, .orderDetailsBottom h4{
+	padding-bottom: 5px;
+}
+
+.Lbox{border-right: 0.5px solid #E6E6E6;}
+.Rbox{padding-left: 50px;}
+
+
+/* 회원리스트 중 삭제 버튼 */
+.deleteMandBBtn{
+	padding: 2px 6px;
+}
+
+/* 페이징버튼 */
+.pagebox{
+	width: 100%; height: 30px;
+	margin: 15px auto;	
+	text-align: center;
+}	
+.pagemove{
+	border: none;
+	cursor: pointer;
+	padding: 3px 10px;
+	background-color: transparent;
+}
+.selectpage{
+	border: solid 2px #7E7E7E !important;
+	cursor: pointer;
+	padding: 3px 5px;
+	background-color: transparent;
+	border-radius: 50%;
+}
+.nonselectpage{
+	border: none;
+	cursor: pointer;
+	padding: 3px 5px;
+	background-color: transparent;
+}
+
+.nonselectpage:hover, .selectpage:hover, .pagemove:hover{
+	color: 7E7E7E;
+	font-weight: bold;
+}
+
+
+/* 커스텀 출력구역 */
+.customPrint{
+	font-weight: bold;
+	font-size: 16px;
+}
+.customListPrint{
+	padding-left: 15px;
+	font-size: 13px;
+	color: #2F2F2F;
+}

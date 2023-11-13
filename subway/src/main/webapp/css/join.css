@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+/* ---------------- 기본값 삭제 ---------------- */
+*{padding: 0px; margin: 0px;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+.joinwrap{
+	height: 100%;
+	background-color: #F6F6F6;
+	padding: 150px 150px;
+}
+
+/* ---------------- 로그인/회원가입 박스 전체 구역 ---------------- */
+.contentBox{
+	width: 800px;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding: 30px 30px 50px 30px;
+	text-align: center;
+	background-color: white;
+}
+.content h2 {
+	padding: 20px 0px 50px 0px;
+	font-size: 30px;
+}
+.content p{
+	color: gray;
+	margin-bottom: 50px;
+}
+.buttonBox{
+	padding: 25px 0px;
+}
+
+/* ---------------- 인풋박스 ---------------- */
+.id, .password, .confirmPassword, .name, 
+.birthdate, .address, .phoneKey{
+	border: solid 0.5px #D0D0D0;
+	margin: 1.5px 0px;
+	width: 530px;
+	height: 65px;
+	font-size: 20px;
+	color: #626262;
+	padding-left: 10px;
+}
+.inputBox h5{
+	text-align: left;
+	margin-left: 140px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+/* .content input:hover {border: none;}
+.content input:active {border: none;} */
+.genderBox{ 
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 130px;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	font-size: 17px;
+	color: #626262;
+}
+.gender{
+	margin-right: 15px;
+	margin-left: 30px;
+}
+.phone0{
+	border: solid 0.5px #D0D0D0;
+	width: 90px;
+	height: 65px;
+	margin: 0.5px 3px;
+	font-size: 20px;
+	color: #626262;
+	padding-left: 5px;
+}
+.phone1, .phone2{
+	border: solid 0.5px #D0D0D0;
+	width: 110px;
+	height: 65px;
+	margin: 0.5px 3px;
+	font-size: 20px;
+	color: #626262;
+	padding-left: 5px;
+}
+
+.sample6_postcode{
+	width: 328px !important;
+	margin-right: 4px;
+	margin-left: 3px;
+	margin-bottom: 2.5px;
+}
+/* ---------------- 버튼 ---------------- */
+.buttonMain, .findid{
+	background-color: #FFCE32 !important;
+}
+.button{
+	width: 200px; height: 65px;
+	margin-top: 20px;
+	border: none;
+	background-color: #009132;
+	font-weight: bold; font-size: 22px;
+	cursor: pointer;
+}
+
+.register{
+	width: 550px;
+}
+
+.phoneButton{
+	width: 190px; height: 65px;
+	margin: 0.5px 3px;
+	border: none;
+	background-color: #D0D0D0;
+	font-weight: bold; font-size: 15px;
+	cursor: pointer;
+}
+.phoneButton:hover, .button:hover{
+	background-color: #9D9D9D !important;
+	color: white;
+	cursor: pointer;
+}
+.phoneButton:active, .button:active{
+	background-color: #2D2D2D !important;
+	color: white;
+	cursor: pointer;
+}
+.findId, .findPw{
+	margin-left: 15px;
+	margin-top: 50px;
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	font-weight: bold;
+}
+.buttonBox span{
+	margin-left: 20px;
+	margin-right: 5px;
+}
+/* ---------------- 유효성검사 안내 메세지 ---------------- */
+.idText, .passwordText, .confirmPasswordText, .makePhoneKey, .phoneKeyText{ color:#E01F1F }
+
+/* ---------------- 회원가입 완료 페이지 상단 이미지 ---------------- */
+.checkImg{ width: 100px;}
+
+
+
+/* ---------------- 성별 체크 박스  ---------------- */
+
+/* .genderBox input[type="radio"] {
+  라디오 버튼 크기 조정
+  width: 20px;
+  height: 20px;
+} */
+
+
+/* 라디오 버튼을 커스텀한 스타일 */
+.genderBox input[type="radio"] {
+    /* 기본 라디오 버튼 숨기기 */
+    display: none;
+}
+
+/* 선택되지 않은 커스텀 라디오 버튼 스타일 */
+.genderBox input[type="radio"] + label {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2D2D2D;
+}
+
+/* 선택된 커스텀 라디오 버튼 스타일 */
+.genderBox input[type="radio"]:checked + label {
+    background-color: #009132;
+    border-color: #009132;
+    color: #FFFFFF;
+}
+
+
+/* 회원정보 찾은 값 */
+.findData{
+	font-size: 30px;
+	font-weight: bold;
+	color: #646062;
+}

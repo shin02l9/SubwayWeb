@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* ---------------- 기본값 삭제 ---------------- */
+*{padding: 0px; margin: 0px;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+.mywrap{
+	height: 100%;
+	background-color: #F6F6F6;
+	padding: 150px 150px;
+}
+
+/* 외부폰트 */
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ---------------- 전체 레이아웃 ---------------- */
+.contentBox{
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding: 30px 30px 50px 30px;
+	text-align: center;
+	background-color: white;
+}
+.content{
+	display: flex;
+	justify-content: space-evenly;
+	vertical-align: middle;
+}
+
+/* 제목 */
+.contentBox h1{
+	padding-top: 50px;	
+	padding-bottom: 80px;	
+	font-size: 55px;
+	font-family: 'TTWanjudaedunsancheB';
+	color: #292929;
+}
+
+
+/* 회원정보, 마일리지 박스 */
+.infoBox, .milBox{
+	width: 400px;
+	height: 500px;
+	position: relative;
+	border-radius: 50px;
+}
+
+.infoBox h3, .milBox h3{
+	padding-top: 50px;	
+	padding-bottom: 80px;
+	font-size: 30px;
+	color: white;
+	font-weight: bold; 
+}
+.infoBox p, .milBox p{
+	padding-top: 30px;	
+	color: white;
+	font-size: 25px;
+}
+
+.infospan, .milspan{
+	font-size: 48px;
+	font-weight: bold;
+	font-family: 'TTWanjudaedunsancheB';
+}
+
+
+/* 버튼 */
+.mypage_btn{
+	position: absolute;
+	bottom: 50px;
+	right: 75px;
+	width: 250px;
+	height: 60px;
+	border-radius: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	border: solid 4px white;
+	cursor: pointer;
+}
+
+/* 배경 컬러 */
+.infoBox, .info_btn{background-color: #FFCE32;}
+.info_btn:hover { background-color: #C49300; }
+.milBox, .mil_btn{background-color: #009132;;}
+.mil_btn:hover { background-color: #00591F; }
+
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*------------------회원정보---------------------*/
+
+.infotitle{
+	font-size: 30px; 
+	padding-right: 360px;
+	margin-left: 10px; 
+	margin-bottom: 30px;
+}
+
+.infoBtnBox{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 5px; 
+}
+
+.infoValBox1, .infoValBox2{
+	border: solid 1px #C5C5C5;
+	width: 700px; 
+	text-align: left; 
+}
+
+.infoValBox1{ height: 100px; margin-bottom: 30px;}
+.infoValBox2{ height: 300px; }
+
+.backBtn{ margin-top: 30px; }
+
+.IB, .backBtn{ 
+	border: none;
+	background-color: #E3E3E3;
+	width: 95px;
+	height: 50px;
+	color: #595557;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.IB:hover, .backBtn:hover{
+	background-color: #DADADA;
+	cursor: pointer;
+}
+.valTitle, .value{
+	vertical-align: middle;
+	padding: 0px 10px;
+}
+.valTitle{ 
+	font-weight: bold;
+	font-size: 18px; 
+	margin-right: 30px;
+}
+
+.infoId{ margin-right: 40px; }
+.infoName{ margin-right: 60px; }
+.val{
+	padding-top: 35px;
+	padding-left: 10px;
+}
+
+.valB{padding-bottom: 35px;}
+
+.infoinput, .updatePw, .updateForPw, .deleteinfoPw{
+	border: none;
+	border-bottom: dashed 2px #C5C5C5;
+	height: 30px;
+}
+.infoinput{ width: 150px; }
+
+.infoinput:focus, .updatePw:focus, 
+.updateForPw:focus, .deleteinfoPw:focus {
+	outline: none;
+	font-size: 20px;
+}
+.updateForPw, .deleteinfoPw{ width: 300px;}
+.beforePwTit{margin-right: 67px;}
+.newPwTit{margin-right: 32px;}
+.confirmPwTit{margin-right: 50px;}
+.deleteConfirmMessage{
+	color: #B7352F;
+	font-weight: bold;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*------------------마일리지---------------------*/

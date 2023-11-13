@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.board_category{
+	display: flex;
+	justify-content: space-around;
+	margin:0 auto;
+	margin-top: 50px;
+	border-top: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
+}
+
+.board_category li{
+	
+	padding:20px 100px;
+}
+
+.categoryselect{
+	background-color: #FFCE32;
+	font-weight: bold;
+	border: none !important;
+	color: white;
+}
+
+.board_content{
+	width:1400px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.board_title{
+	margin-top:60px;
+	margin-left:20px;
+}
+
+/* 리뷰 */
+.board_list{
+	width:1600px;
+	position: relative;
+	border-collapse: collapse; 
+   	color: black;
+   	table-layout: fixed;
+   	max-height: 500px;
+   	overflow-y: scroll; 
+   	text-align: center;
+} 
+
+.boardList .subwayreviewImg{
+	position: absolute;
+	width:350px;
+	text-align: left;
+	top: 20px;
+	left:10px;
+}
+
+/* 게시물 */
+.board_list_box{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 600px;
+   padding-top: 150px;
+ 
+}
+
+.board_list td, .board_list th{
+	border-collapse: collapse; 
+   border-bottom: 1px solid #dadada;
+   border-top: 1px solid #dadada;
+   padding: 10px;
+}
+
+.board_list .title{
+   width:30%;
+   text-align: center;
+}
+
+.board_list .name{
+	width:10%;
+	text-align: center;
+}
+
+.board_list .no{
+	width:10%;
+	text-align: center;
+}
+
+.board_list .star{
+	text-align: center;
+	width:175px;
+}
+
+
+.writeBtn {
+	text-align: right;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009132;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 100px;
+	max-height: 44px;
+}
+
+
+
+.writeBtn:hover{
+	background-color: #127E12;
+}
